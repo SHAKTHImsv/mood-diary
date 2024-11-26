@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Diary</h1>
+        <form id="mood-form">
+            <label for="mood">How are you feeling today?</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="neutral">Neutral</option>
+                <option value="angry">Angry</option>
+                <option value="excited">Excited</option>
+                <option value="anxious">Anxious</option>
+            </select>
+            <label for="notes">Add some notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Write about your day..."></textarea>
+            <button type="submit">Save Mood Entry</button>
+        </form>
+        <div id="diary-entries">
+            <h2>Your Past Entries:</h2>
+            <ul id="entries-list">
+                <!-- Mood entries will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
